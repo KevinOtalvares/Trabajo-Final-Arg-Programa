@@ -1,3 +1,52 @@
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
+header {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    padding: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+nav a {
+    margin-left: 8px;
+    margin-right: 8px;
+    font-weight: 600;
+}
+
+header a:hover {
+    color: khaki;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+}
 
