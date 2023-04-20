@@ -44,16 +44,6 @@ nav a {
 
 header a:hover { color: lightpink; }
 
-@media (max-width: 600px) {
-    header {
-        flex-direction: column;
-    }
-
-    nav {
-        padding: 10px 0px;
-    }
-}
-
 .imagenPrincipal {
     background-image: url(./Images/foto-helado-1.jpg);
     background-size: cover;
@@ -81,19 +71,43 @@ header a:hover { color: lightpink; }
     text-shadow: 1px 1px 10px black;
 }
 
+.row {
+    margin: 0;
+}
+
 .col-md-6 {
     padding: 0;
+    margin: 0;
 }
 
 .imagenSecundaria {
-    height: inherit;
+    height: 100%;
+    min-height: 250px;
     width: 100%;
+    background-image: url("./Images/foto-helado-2.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .contenedorTexto {
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+
+    #tituloPrincipal {
+        font-size: 45px;
+    }
 }
