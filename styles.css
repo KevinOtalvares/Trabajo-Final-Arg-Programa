@@ -7,8 +7,6 @@
 
 header {
     display: flex;
-    background-color: black;
-    color: white;
     justify-content: space-between;
     align-items: center;
     min-height: 70px;
@@ -24,6 +22,7 @@ header a {
     display: flex;
     align-items: center;
     font-family: 'Yellowtail', cursive;
+    color: lightpink;
 }
 
 .logo img{
@@ -75,7 +74,7 @@ header a:hover { color: lightpink; }
     margin: 0;
 }
 
-.col-md-6 {
+.col-md-6, .col-lg-6 {
     padding: 0;
     margin: 0;
 }
@@ -84,18 +83,61 @@ header a:hover { color: lightpink; }
     height: 100%;
     min-height: 250px;
     width: 100%;
-    background-image: url("./Images/foto-helado-2.jpg");
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
 }
 
 .contenedorTexto {
     text-align: center;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.contenedorTextoGrande {
+    min-height: 150px;
+    text-align: center;
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-footer {
+    background-color: lightpink;
+    min-height: 200px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.logoFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Yellowtail', cursive;
+    margin: 20px 0px;
+}
+
+.logoFooter img{
+    height: 100px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.info-footer nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.info-footer nav a:hover {
+    color: white;
 }
 
 @media (max-width: 600px) {
@@ -109,5 +151,10 @@ header a:hover { color: lightpink; }
 
     #tituloPrincipal {
         font-size: 45px;
+    }
+
+    .contenedorTextoGrande {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
