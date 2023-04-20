@@ -42,7 +42,7 @@ nav a {
     font-weight: 600;
 }
 
-header a:hover { color: khaki; }
+header a:hover { color: lightpink; }
 
 @media (max-width: 600px) {
     header {
@@ -62,10 +62,21 @@ header a:hover { color: khaki; }
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* color: white; */
+    color: white;
     min-height: 500px;
 }
 
 .fontArtesanal {
     font-family: 'Yellowtail', cursive;
+}
+
+#tituloPrincipal {
+    font-size: 64px;
+    text-align: center;
+    text-shadow: 1px 1px 10px black;
+}
+
+#subtituloPrincipal {
+    font-size: 40px;
+    text-shadow: 1px 1px 10px black;
 }
