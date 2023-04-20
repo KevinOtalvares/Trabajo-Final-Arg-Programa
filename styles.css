@@ -80,3 +80,20 @@ header a:hover { color: lightpink; }
     font-size: 40px;
     text-shadow: 1px 1px 10px black;
 }
+
+.col-md-6 {
+    padding: 0;
+}
+
+.imagenSecundaria {
+    height: inherit;
+    width: 100%;
+}
+
+.contenedorTexto {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
