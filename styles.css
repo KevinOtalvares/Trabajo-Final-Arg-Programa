@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 
 * {
     margin: 0;
@@ -22,12 +23,17 @@ header a {
 .logo {
     display: flex;
     align-items: center;
+    font-family: 'Yellowtail', cursive;
 }
 
 .logo img{
     height: 50px;
     border-radius: 50px;
     margin-right: 10px;
+}
+
+h2 {
+    margin-bottom: 0;
 }
 
 nav a {
@@ -56,8 +62,10 @@ header a:hover { color: khaki; }
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    /* color: white; */
     min-height: 500px;
 }
 
-
+.fontArtesanal {
+    font-family: 'Yellowtail', cursive;
+}
