@@ -145,6 +145,14 @@ header a:hover { color: lightpink; }
     color: white;
 }
 
+/* contacto.html */
+.tituloPagina {
+    font-size: 48px;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+
 @media (max-width: 992px) {
     .seccionImagenTexto {
         flex-direction: column-reverse;
