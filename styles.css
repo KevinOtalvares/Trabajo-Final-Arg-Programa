@@ -109,6 +109,10 @@ header a:hover { color: lightpink; }
     justify-content: center;
 }
 
+.seccionImagenTexto {
+    display: flex;
+}
+
 .info-footer {
     background-color: lightpink;
     min-height: 200px;
@@ -141,6 +145,16 @@ header a:hover { color: lightpink; }
     color: white;
 }
 
+@media (max-width: 992px) {
+    .seccionImagenTexto {
+        flex-direction: column-reverse;
+    }
+
+    #tituloPrincipal {
+        font-size: 45px;
+    }
+}
+
 @media (max-width: 600px) {
     header {
         flex-direction: column;
@@ -148,10 +162,6 @@ header a:hover { color: lightpink; }
 
     nav {
         padding: 10px 0px;
-    }
-
-    #tituloPrincipal {
-        font-size: 45px;
     }
 
     .contenedorTextoGrande {
