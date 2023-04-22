@@ -31,9 +31,9 @@ header a {
     margin-right: 10px;
 }
 
-/* h2 {
+h2 {
     margin-bottom: 0;
-} */
+}
 
 nav a {
     margin-left: 8px;
@@ -145,6 +145,67 @@ header a:hover { color: lightpink; }
     color: white;
 }
 
+/* eventos.html */
+
+.contenedorForm {
+    background-color: white;
+    width: 90%;
+    padding: 30px 20px;
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputEvento {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.inputEvento input {
+    height: 40px;
+    width: 100%;
+}
+
+.inputPersonalizado {
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+}
+
+.inputPersonalizado input, .inputPersonalizado textarea {
+    background-color: whitesmoke;
+    border: 0px;
+    outline: none;
+    margin: 0 10px;
+    width: 100%;
+}
+
+.inputPersonalizado textarea {height: 200px;}
+
+.botonPersonalizado{
+    color: white;
+    background-color: black;
+    border: 0px solid black;
+    text-transform: uppercase;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+}
+
+.botonPersonalizado:hover {
+    background-color: lightpink;
+    color: white;
+}
+
+.confirmacionFormulario {
+    
+}
+
 /* contacto.html */
 
 .tituloPagina {
@@ -201,15 +262,16 @@ header a:hover { color: lightpink; }
 }
 
 @media (max-width: 600px) {
-    header {
-        flex-direction: column;
-    }
+    header { flex-direction: column; }
 
-    nav {
-        padding: 10px 0px;
-    }
+    nav { padding: 10px 0px; }
 
     .contenedorTextoGrande {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contenedorForm {
         margin-left: 0;
         margin-right: 0;
     }

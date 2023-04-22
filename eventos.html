@@ -28,17 +28,39 @@
 
     <main>
         <h2 class="tituloPagina">Eventos</h2>
-        <h6>Hace tu consulta para tener los mejores helados en tu fiesta!</h6>
-        <form action="">
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="Email">
-            <label for="">Consulta</label>
-            <textarea name="" id="" cols="40" rows="10"></textarea>
-        </form>
+        <div class="col-md-12 imagenSecundaria"
+            style="background-image: url('./Images/foto-helado-3.avif'); min-height: 500px">
+            <form action="" class="contenedorForm">
+                <h5 style="text-align: center;">
+                    Hace tu consulta para tener los mejores helados en tu fiesta!</h5>
+                <div class="inputEvento">
+                    <label for="">Nombre</label>
+                    <div class="inputPersonalizado">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="inputEvento">
+                    <label for="">Email</label>
+                    <div class="inputPersonalizado">
+                        <input type="email">
+                    </div>
+                </div>
+                <div class="inputEvento">
+                    <label for="">Consulta</label>
+                    <div class="inputPersonalizado">
+                        <textarea name="" id="" cols="40" rows="10"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="botonPersonalizado">Enviar</button>
+                <h5 class="confirmacionFormulario">Su conculta ha sido enviada!</h5>
+            </form>
+        </div>
+        
         <h2>Calculadora de Helados</h2>
         <h6>Ingresá la cantidad de invitados para tu evento y te damos diferentes opciones ideales para tu fiesta, para que nadie se quede sin disfrutar de nuestros riquísimos helados!</h6>
-        <input type="number" placeholder="Cantidad de invitados">
-        <ul>
+        <input type="number" id="cantInvitados" placeholder="Cantidad de invitados">
+        <button onclick="calcularHelado()">Calcular!</button>
+        <ul id="listaHelado">
             <li>10 Kg de Helado</li>
             <li>40 Cucuruchos</li>
             <li>50 Lado Paletas</li>
