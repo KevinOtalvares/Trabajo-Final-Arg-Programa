@@ -30,7 +30,7 @@
         <h2 class="tituloPagina">Eventos</h2>
         <div class="col-md-12 imagenSecundaria"
             style="background-image: url('./Images/foto-helado-3.avif'); min-height: 500px">
-            <form action="" class="contenedorForm">
+            <form action="" class="contenedorForm" id="formularioEventos">
                 <h5 style="text-align: center;">
                     Hace tu consulta para tener los mejores helados en tu fiesta!</h5>
                 <div class="inputEvento">
@@ -52,19 +52,34 @@
                     </div>
                 </div>
                 <button type="submit" class="botonPersonalizado">Enviar</button>
-                <h5 class="confirmacionFormulario">Su conculta ha sido enviada!</h5>
+                <h5 id="confirmacionFormularioEventos"></h5>
             </form>
         </div>
-        
-        <h2>Calculadora de Helados</h2>
-        <h6>Ingresá la cantidad de invitados para tu evento y te damos diferentes opciones ideales para tu fiesta, para que nadie se quede sin disfrutar de nuestros riquísimos helados!</h6>
-        <input type="number" id="cantInvitados" placeholder="Cantidad de invitados">
-        <button onclick="calcularHelado()">Calcular!</button>
-        <ul id="listaHelado">
-            <li>10 Kg de Helado</li>
-            <li>40 Cucuruchos</li>
-            <li>50 Lado Paletas</li>
-        </ul>
+
+        <div style="background-color: black; padding-bottom: 40px;">
+            <h1 class="fontArtesanal text-center" style="color: white; padding: 20px 0;">
+                Calculadora de Helados</h1>
+            <div class="contenedorCalculadora">
+                <div class="columnaCalculadora" style="background-color: white;">
+                    <h6>Ingresá la cantidad de invitados para tu evento y te damos diferentes opciones ideales para tu fiesta, para que nadie se quede sin disfrutar de nuestros riquísimos helados!</h6>
+                    <div class="inputPersonalizado">
+                        <input type="number" id="cantInvitados" placeholder="Invitados">
+                    </div>
+                    <button onclick="calcularHelado()" class="botonPersonalizado">
+                        Calcular!</button>
+                </div>
+                <div class="columnaCalculadora" style="background-color: lightpink;">
+                    <h6>Para una cantidad de X invitados te recomendamos las siguientes opciones:</h6>
+                    <ul id="listaHelado">
+                        <li> Helado.</li>
+                        <li> Helado con cucuruchos</li>
+                        <li> Lado Paletas®.</li>
+                        <li> Helado y Lado Paletas®.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <footer>

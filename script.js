@@ -21,9 +21,16 @@ function calcularHelado(){
     if (cantInvitados % 4 != 0) {
         cantKilos++;
     }
-    listaHelado.innerHTML = "<h6>Para una cantidad de " + cantInvitados + " invitados te recomendamos las siguientes opciones:</h6>";
-    listaHelado.innerHTML += "<li>" + cantKilos + " Kg de helado.</li>";
+    listaHelado.innerHTML = "<li>" + cantKilos + " Kg de helado.</li>";
     listaHelado.innerHTML += "<li>" + cantKilos + " Kg de helado + " + cantCucuruchos + " cucuruchos.</li>";
     listaHelado.innerHTML += "<li>" + cantPaletas + " Lado Paletas®.</li>";
     listaHelado.innerHTML += "<li>" + Math.ceil(cantKilos/2) + " Kg de Helado + " + Math.floor(cantPaletas/2) + " Lado Paletas®.</li>";
+}
+
+let formulario = document.getElementById("formularioEventos");
+formulario.addEventListener("submit", mostrarMensajeFormularioEventos);
+function mostrarMensajeFormularioEventos() {
+    event.preventDefault();
+    let textoFeedback = document.getElementById("confirmacionFormularioEventos");
+    textoFeedback.innerHTML = "Su conculta ha sido enviada!";
 }

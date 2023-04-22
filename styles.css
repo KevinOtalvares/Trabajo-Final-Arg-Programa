@@ -151,7 +151,7 @@ header a:hover { color: lightpink; }
     background-color: white;
     width: 90%;
     padding: 30px 20px;
-    margin: 100px;
+    margin: 100px 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -202,8 +202,39 @@ header a:hover { color: lightpink; }
     color: white;
 }
 
-.confirmacionFormulario {
-    
+#confirmacionFormularioEventos {
+    margin: 0;
+    padding-top: 10px;
+    color: lightpink;
+}
+
+.contenedorCalculadora {
+    /* margin: 10px; */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.columnaCalculadora {
+    width: 30%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#cantInvitados {
+    height: 50px;
+    width: 100%;
+}
+
+.contenedorCalculadora .inputPersonalizado {
+    width: 35%;
+    align-self: center;
+    margin: 20px 0;
 }
 
 /* contacto.html */
@@ -252,13 +283,15 @@ header a:hover { color: lightpink; }
 
 
 @media (max-width: 992px) {
-    .seccionImagenTexto {
-        flex-direction: column-reverse;
-    }
+    .seccionImagenTexto { flex-direction: column-reverse; }
 
-    #tituloPrincipal {
-        font-size: 45px;
-    }
+    #tituloPrincipal { font-size: 45px; }
+
+    .contenedorForm { margin: 100px 0; }
+
+    .contenedorCalculadora { flex-direction: column;}
+
+    .columnaCalculadora { width: 90%; }
 }
 
 @media (max-width: 600px) {
