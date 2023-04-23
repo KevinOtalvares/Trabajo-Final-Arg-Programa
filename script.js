@@ -85,8 +85,6 @@ function validarFormulario() {
 }
 
 function calcularHelado(listaHelado, cantInvitados){
-    // let cantInvitados = Number(document.getElementById("cantInvitados").value);
-    
     let cantCucuruchos = cantInvitados + Math.floor(cantInvitados/10);
     let cantPaletas = cantInvitados + Math.floor(cantInvitados/10);
     let cantKilos = Math.floor(cantInvitados / 4);
