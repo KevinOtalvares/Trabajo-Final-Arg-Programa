@@ -36,20 +36,23 @@
                 <div class="inputEvento">
                     <label for="">Nombre</label>
                     <div class="inputPersonalizado">
-                        <input type="text">
+                        <input type="text" id="nombre">
                     </div>
+                    <h6 class="mensajeError">Valor inválido!</h6>
                 </div>
                 <div class="inputEvento">
                     <label for="">Email</label>
                     <div class="inputPersonalizado">
-                        <input type="email">
+                        <input type="text" id="mail">
                     </div>
+                    <h6 class="mensajeError">Valor inválido!</h6>
                 </div>
                 <div class="inputEvento">
                     <label for="">Consulta</label>
                     <div class="inputPersonalizado">
-                        <textarea name="" id="" cols="40" rows="10"></textarea>
+                        <textarea name="" id="consulta" cols="40" rows="10"></textarea>
                     </div>
+                    <h6 class="mensajeError">Valor inválido!</h6>
                 </div>
                 <button type="submit" class="botonPersonalizado">Enviar</button>
                 <h5 id="confirmacionFormularioEventos"></h5>
@@ -62,10 +65,14 @@
             <div class="contenedorCalculadora">
                 <div class="columnaCalculadora" style="background-color: white;">
                     <h6>Ingresá la cantidad de invitados para tu evento y te damos diferentes opciones ideales para tu fiesta, para que nadie se quede sin disfrutar de nuestros riquísimos helados!</h6>
-                    <div class="inputPersonalizado">
-                        <input type="number" id="cantInvitados" placeholder="Invitados">
+                    <div class="inputEvento">
+                        <div class="inputPersonalizado" style="margin: 10px 0;">
+                            <input type="text" id="cantInvitados" placeholder="Invitados" required>
+                        </div>
+                        <h6 class="mensajeError" style="text-align: center;">
+                            Valor inválido!</h6>
                     </div>
-                    <button onclick="calcularHelado()" class="botonPersonalizado">
+                    <button id="botonCalculadora" class="botonPersonalizado">
                         Calcular!</button>
                 </div>
                 <div class="columnaCalculadora" style="background-color: lightpink;">

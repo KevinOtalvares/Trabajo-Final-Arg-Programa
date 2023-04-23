@@ -196,6 +196,12 @@ header a:hover { color: lightpink; }
 
 .inputPersonalizado textarea {height: 200px;}
 
+.mensajeError {
+    color: red;
+    padding-left: 10px;
+    display: none;
+}
+
 .botonPersonalizado{
     color: white;
     background-color: black;
@@ -242,7 +248,6 @@ header a:hover { color: lightpink; }
 .contenedorCalculadora .inputPersonalizado {
     width: 35%;
     align-self: center;
-    margin: 20px 0;
 }
 
 /* sobre-nosotros.html */
