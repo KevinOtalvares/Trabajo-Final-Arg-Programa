@@ -21,6 +21,7 @@ function calcularHelado(){
     if (cantInvitados % 4 != 0) {
         cantKilos++;
     }
+    // "Para una cantidad de X invitados te recomendamos las siguientes opciones:"
     listaHelado.innerHTML = "<li>" + cantKilos + " Kg de helado.</li>";
     listaHelado.innerHTML += "<li>" + cantKilos + " Kg de helado + " + cantCucuruchos + " cucuruchos.</li>";
     listaHelado.innerHTML += "<li>" + cantPaletas + " Lado Paletas®.</li>";

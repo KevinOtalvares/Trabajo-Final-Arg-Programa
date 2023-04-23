@@ -1,8 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Yellowtail&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 400;
 }
 
 header {
@@ -209,7 +218,6 @@ header a:hover { color: lightpink; }
 }
 
 .contenedorCalculadora {
-    /* margin: 10px; */
     display: flex;
     align-content: center;
     justify-content: center;
@@ -235,6 +243,33 @@ header a:hover { color: lightpink; }
     width: 35%;
     align-self: center;
     margin: 20px 0;
+}
+
+/* sobre-nosotros.html */
+
+.contenedorPresentacion {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.presentacion {
+    width: 25%;
+    min-width: 275px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+.presentacion svg{
+    align-self: center;
+}
+
+.presentacion svg:hover{
+    fill: lightpink;
 }
 
 /* contacto.html */
